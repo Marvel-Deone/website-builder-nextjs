@@ -1,11 +1,10 @@
-import { TextField } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
 
   return (
-    <main className=' bg-[#EBEDF0] h-screen min-h-screen'>
+    <main className='bg-[#EBEDF0] h-screen min-h-screen'>
       <div className="w-full md:max-w-xl 2xl:max-w-4xl mx-auto flex flex-col p-8 md:p-[38px] lg:px-18 lg:py-[4.3rem] justify-center items-center">
         <Image src={'/marvelsitep-logo.png'} width={200} height={200} alt='marvelsite-logo' />
         <div
@@ -16,12 +15,13 @@ export default function Home() {
           </div>
           <form className="w-full flex flex-col gap-3">
             <div>
-              <TextField className='w-full p-1' style={{ padding: '2px' }} id="filled-basic" label="Email" variant="filled" />
+              {/* <TextField className='w-full p-1' style={{ padding: '2px' }} id="filled-basic" label="Email" variant="filled" /> */}
             </div>
             <div>
-              <TextField className='w-full p-1' style={{ padding: '2px' }} id="filled-basic" label="Password" variant="filled" />
+              {/* <TextField className='w-full p-1' style={{ padding: '2px' }} id="filled-basic" label="Password" variant="filled" /> */}
             </div>
-            <button className='text-center bg-blue-700 w-full text-white py-3 md:px-5 px-8 rounded-md hover:bg-blue-600 transition-all ease-in duration-300 mt-2 focus:outline-none font-normal mt-2'>Login</button>
+            <Link className='text-center bg-blue-700 w-full text-white py-3 md:px-5 px-8 rounded-md hover:bg-blue-600 transition-all ease-in duration-300 mt-2 focus:outline-none font-normal mt-2' href="/user">Login</Link>
+            {/* <button className='text-center bg-blue-700 w-full text-white py-3 md:px-5 px-8 rounded-md hover:bg-blue-600 transition-all ease-in duration-300 mt-2 focus:outline-none font-normal mt-2'><Link href="/user">Login</Link></button> */}
             <hr className="mt-6 mb-3" />
             <p className="text-center">
               <Link href='/signup' className="text-sm font-medium text-blue-700 hover:underline b-0"> Don't have an account?
